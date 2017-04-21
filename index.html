@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Odkaz na github: https://github.com/RomanReiter/ParaShop -->
+    <meta charset="utf-8">
+    <title>Dokumentace</title>
+</head>
+
+<body>
+    <header>
+        <h1>Dokumentace semestrálního projektu</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#uvod">Úvod</a></li>
+            <li><a href="#metodika">Metodika</a></li>
+            <li><a href="#atributy">Popis atributů a elementů</a></li>
+            <li><a href="#transformace">Popis transformace</a></li>
+            <li><a href="#zaver">Závěr</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Para shop</h1>
+        <h3>Obchod s vybavením pro parašutisty</h3>
+        <article id="uvod">
+            <h2>Úvod</h2>
+            <p>Práce obsahuje data, týkající se fiktívniho obchodu s vybavením pro parašutisty. Nachází se zde seznam se sbožím, informace o prodejně, zaměstnancech, zákaznicích.</p>
+            <br>
+            <p><b>Úkolem bylo:</b></p>
+            <ul>
+                <li>XML dokument naplněný 50elementy a 10atributy</li>
+                <li>XMLSchema obohacené o restrikce a specifikace atributů</li>
+                <li>XSL Transformaci, která nám data převede do HTML tabulky</li>
+            </ul>
+        </article>
+        <article id="metodika">
+            <h2>Metodika</h2>
+            <p>Při zhotovování projektu jsem využíval <a href="http://www.w3schools.com/xml/" target="_blank">XML</a>, <a href="https://www.w3schools.com/xml/schema_intro.asp" target="_blank">XSD</a> a <a href="https://www.w3schools.com/xml/xsl_intro.asp" target="_blank">XSLT</a> dokumentaci ze stránek <a href="http://www.w3schools.com/" target="_blank">W3 Schools</a> a také ze znalostí získaných z cvičení a přednášek.
+            </p>
+            <br>
+            <p>Celý kód jsem psal v editoru Sublime Text 3.</p>
+            <br>
+            <p>Ke zvalidování souborů jsem použil <a href="http://www.freeformatter.com/xml-validator-xsd.html" target="_blank">online validator</a>.</p>
+        </article>
+        <article id="atributy">
+            <h2>Popis elementů a atributů</h2>
+            <p>Všem elementům je nadřazený element "para_shop". Podřazené elementy "sidlo" "zbozi" "zamestnanci" "zakaznici" jsou na stejný úrovni a obsahují další elementy a atributy, kteří popisují obchod.</p>
+            <h3>Tabulka elementů a jejich atributy</h3>
+            <table style="width:500px" border="1">
+                <tr>
+                    <th>Název elementu/atributu</th>
+                    <th>Popis elementu/atributu</th>
+                </tr>
+                <tr>
+                    <td>&lt;para_shop&gt;</td>
+                    <td>Nadřazený element všech. Obsahuje vsobe další <i>elementy</i> s jejich <i>atributmi</i></td>
+                </tr>
+                <tr>
+                    <td>&lt;sidlo&gt;</td>
+                    <td>Element, který se svími vnořenýma elementmi a atributem tvoří základní údaje s adresou obchodu.</td>
+                </tr>
+                <tr>
+                    <td>&lt;zbozi&gt;</td>
+                    <td>Se svojími podřízenýma elemetama a atributma tvoří katalog zboží, který se nachází na prodejně</td>
+                </tr>
+                <tr>
+                    <td>&lt;vrchliky&gt;</td>
+                    <td>Element určující konkrétní skupinu zboží</td>
+                </tr>
+                <tr>
+                    <td>&lt;vrchlik&gt;</td>
+                    <td>Element, kteří se svojíma atributem a podřízenými elementmi tvoří konkrétní tovar na prodejni.</td>
+                </tr>
+                <tr>
+                    <td>&lt;postroje&gt;</td>
+                    <td>Další element určující konkrétní skupinu zboží</td>
+                </tr>
+                <tr>
+                    <td>&lt;postroj&gt;</td>
+                    <td>Element, kteří se svojím atributem a podřízenými elementmi tvoří konkrétní tovar na prodejni.</td>
+                </tr>
+                <tr>
+                    <td>&lt;bezpecnostni_pristroje&gt;</td>
+                    <td>Další element určující konkrétní skupinu zboží</td>
+                </tr>
+                <tr>
+                    <td>&lt;bezpecnostni_pristroj&gt;</td>
+                    <td>Element, kteří se svojím atributem a podřízenými elementmi tvoří konkrétní tovar na prodejni.</td>
+                </tr>
+                <tr>
+                    <td>&lt;specialni_parametre&gt;</td>
+                    <td>Element, kteří se svojím atributem a podřízenými elementmi specifikují mo%znosti nastavění daného zboží</td>
+                </tr>
+                <tr>
+                    <td>&lt;zamestnanci&gt;</td>
+                    <td>Element, který se svíma podřízenýma elementi a atributmi tvoří informace o zaměstnancech obchodu.</td>
+                </tr>
+                <tr>
+                    <td>&lt;zamestnanec&gt;</td>
+                    <td>Element, který se svými atributmi a podřízenými elementmi tvoří záznam o zamestnanci</td>
+                </tr>
+                <tr>
+                    <td>&lt;zakaznici&gt;</td>
+                    <td>Element, který se svíma podřízenýma elementi a atributmi tvoří informace o zakaznících obchodu.</td>
+                </tr>
+                <tr>
+                    <td>&lt;zakaznik&gt;</td>
+                    <td>Element, který se svými atributmi a podřízenými elementmi tvoří záznam o zamestnanci</td>
+                </tr>
+                <tr>
+                    <td>cp</td>
+                    <td>Atribut typu integer, který určuje číslo domu</td>
+                </tr>
+                <tr>
+                    <td>idV</td>
+                    <td>Jedinečný identifikátor pro zboží "vrchlík"</td>
+                </tr>
+                <tr>
+                    <td>idP</td>
+                    <td>Jedinečný identifikátor pro zboží "postroj"</td>
+                </tr>
+                <tr>
+                    <td>idAAD</td>
+                    <td>Jedinečný identifikátor pro zboží "bezpecnostni pristroj"</td>
+                </tr>
+                <tr>
+                    <td>Level</td>
+                    <td>Atribut udávající jednotlivé módy, které se dají nastavit na zboží "bezúečnostní přístroj"</td>
+                </tr>
+                <tr>
+                    <td>idZAM</td>
+                    <td>Jedinečný identifikátor pro zamestnance</td>
+                </tr>
+                <tr>
+                    <td>pozice</td>
+                    <td>Atribut určující pracovní pozici zaměstnance</td>
+                </tr>
+                <tr>
+                    <td>datum_vytvoření</td>
+                    <td>Atribut s datem vytvoření uživatele</td>
+                </tr>
+                <tr>
+                    <td>datum_zmeny</td>
+                    <td>Atribut s datem změny na účtu uživatele</td>
+                </tr>
+                <tr>
+                    <td>idZAK</td>
+                    <td>Jedinečný identifikátor pro zákazníka</td>
+                </tr>
+                <tr>
+                    <td>cpZAK</td>
+                    <td>Atribut typu integer, který určuje číslo popisné zákazníka</td>
+                </tr>
+                <p>V dokumentu se ovšem nachází vícero elementů.</p>
+            </table>
+        </article>
+        <article id="transformace">
+            <h2>Popis transformace</h2>
+            <p>Má transformace obsahuje html tabulku, která obsahuje všechny hlavní padáky (vrchlíky).</p>
+            <br>
+            <p>V tabulce se nacházejí všechny hlavní padáky Para shopu, kteřé jsou seřazené podle datumu výroby od nejstaršího po nejnovější hlavní padák. Jednlotivé řádky tabulky jsou podbarveni dvěma barvama. Oranžová barva je pro hlavní padáky jejiž cena přesahuje 80000 CZK a žlutá barva pro hlavní padáky, které jsou levnějši než 80000 CZK</p>
+            <br>
+            <h3>Výsledek transformace</h3>
+            <h1>Ceny hlavních padaků</h1>
+            <table border="1">
+                <tr bgcolor="lime">
+                    <td>
+                        <b>Výrobce</b>
+                    </td>
+                    <td>
+                        <b>Model</b>
+                    </td>
+                    <td>
+                        <b>Velikost</b>
+                    </td>
+                    <td>
+                        <b>Maximálne zaťažení</b>
+                    </td>
+                    <td>
+                        <b>Datum výroby hlavního padáku</b>
+                    </td>
+                    <td>
+                        <b>Typ</b>
+                    </td>
+                    <td>
+                        <b>Cena</b>
+                    </td>
+                </tr>
+                <tr bgcolor="orange">
+                    <td>Performance Design</td>
+                    <td>Katana</td>
+                    <td>135 ft.</td>
+                    <td>82 kg</td>
+                    <td>2014-05-20</td>
+                    <td>Sport</td>
+                    <td>90000</td>
+                </tr>
+                <tr bgcolor="yellow">
+                    <td>Performance Design
+                        <td>Sabre2</td>
+                        <td>170 ft</td>
+                        <td>90 kg</td>
+                        <td>2015-02-02</td>
+                        <td>Sport</td>
+                        <td>Cena</td>
+                </tr>
+                <tr bgcolor="yellow">
+                    <td>ICARUS</td>
+                    <td>Omni2</td>
+                    <td>229 ft</td>
+                    <td>110 kg</td>
+                    <td>2015-12-23</td>
+                    <td>Student</td>
+                    <td>50000</td>
+                </tr>
+                <tr bgcolor="yellow">
+                    <td>Performance Design
+                        <td>PD Optimum Reserve Chute</td>
+                        <td>193 ft</td>
+                        <td>90 kg</td>
+                        <td>2016-07-03</td>
+                        <td>Záložný padák</td>
+                        <td>45000</td>
+                </tr>
+                <tr bgcolor="orange">
+                    <td>SIGMA</td>
+                    <td>SIGMA Tandem</td>
+                    <td>395 ft</td>
+                    <td>350kg</td>
+                    <td>2016-09-05</td>
+                    <td>Tandem</td>
+                    <td>130000</td>
+                </tr>
+            </table>
+            <table border="1">
+                <tr bgcolor="red">
+                    <th>Legenda</th>
+                </tr>
+                <tr bgcolor="yellow">
+                    <td>
+                        <p>Žlutě jsou označeni hlavní padáky, které stoji míň jak 80000 CZK.</p>
+                    </td>
+                </tr>
+                <tr bgcolor="orange">
+                    <td>
+                        <p>Oranžově jsou označeni hlavní padáky, které stoji víc jak 80000 CZK.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Všechny hlavní padáky jsou seřazeny podle datumu výroby od nejstaršího po nejnovější</p>
+                    </td>
+                </tr>
+            </table>
+        </article>
+        <article id="zaver">
+            <h2>Závěr</h2>
+            <p>Touto prací jsem nabyl nových vědomostí ze světa XML, XSD, XSLT a HTML. Využil jsem také informací, které jsem získal na přednáškách a cvičeních. Tato semestrální práce by měla splňovat veškeré podmínky, které byly zadány.</p>
+        </article>
+    </section>
+    <footer>
+        <p>&copy; Roman Reiter. Semestrální práce z předmětu Značkovací jazyky.</p>
+    </footer>
+</body>
+
+</html>

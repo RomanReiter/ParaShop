@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="para_shop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="sidlo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ulice">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="cp"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="mesto"/>
+              <xs:element type="xs:string" name="psc"/>
+              <xs:element type="xs:string" name="mob_cislo"/>
+              <xs:element type="xs:string" name="fax"/>
+              <xs:element type="xs:string" name="email"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zbozi">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="vrchliky">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="vrchlik" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="vyrobce_vrchliku"/>
+                          <xs:element type="xs:string" name="model_vrchliku"/>
+                          <xs:element type="xs:string" name="velikost_vrchliku"/>
+                          <xs:element type="xs:string" name="nosnost_vrchliku"/>
+                          <xs:element type="xs:string" name="urceni_vrchliku"/>
+                          <xs:element type="xs:date" name="datum_vyroby_vrchliku"/>
+                          <xs:element type="xs:string" name="stav_vrchliku"/>
+                          <xs:element type="xs:int" name="cena_vrchliku"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="idV" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="postroje">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="postroj" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="vyrobce_postroje"/>
+                          <xs:element type="xs:string" name="model_postroje"/>
+                          <xs:element type="xs:string" name="urceni_postroje"/>
+                          <xs:element type="xs:string" name="uvolnovace_postroje"/>
+                          <xs:element type="xs:date" name="datum_vyroby_postroje"/>
+                          <xs:element type="xs:string" name="cena_postroje"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="idP" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="bezpecnostni_pristroje">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="bezpecnostni_pristroj" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="vyrobce_aad"/>
+                          <xs:element type="xs:string" name="model_aad"/>
+                          <xs:element type="xs:date" name="datum_vyroby_aad"/>
+                          <xs:element type="xs:string" name="cena_aad"/>
+                          <xs:element name="specialni_parametre" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="aktivace_vyska"/>
+                                <xs:element type="xs:string" name="aktivace_rychlost"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="level" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="idAAD" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zamestnanci">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="zamestnanec" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="jmeno_zam"/>
+                    <xs:element type="xs:string" name="prijimeni_zam"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="idZAM" use="optional"/>
+                  <xs:attribute type="xs:string" name="pozice" use="optional"/>
+                  <xs:attribute type="xs:date" name="datum_vytvoreni" use="optional"/>
+                  <xs:attribute type="xs:date" name="datum_zmeny" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zakaznici">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="zakaznik" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="jmeno_zak"/>
+                    <xs:element type="xs:string" name="prijimeni_zak"/>
+                    <xs:element type="xs:short" name="rok_narozeni_zak"/>
+                    <xs:element name="adresa_zak">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ulice_zak">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:byte" name="cpZAK" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="mesto_zak"/>
+                          <xs:element type="xs:string" name="psc_zak"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:int" name="idZAK" use="optional"/>
+                  <xs:attribute type="xs:date" name="datum_vytvoreni" use="optional"/>
+                  <xs:attribute type="xs:date" name="datum_zmeny" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

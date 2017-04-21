@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="para_shop.xsl"?>
+<para_shop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="para_shop.xsd">
+    <sidlo>
+        <ulice cp="10">Budovska</ulice>
+        <mesto>Praha</mesto>
+        <psc>168 00</psc>
+        <mob_cislo>+420 773 111 113</mob_cislo>
+        <fax>+420 571 458 458</fax>
+        <email>parashop@parashop.cz</email>
+    </sidlo>
+    <zbozi>
+        <vrchliky>
+            <vrchlik idV="1v">
+                <vyrobce_vrchliku>Performance Design</vyrobce_vrchliku>
+                <model_vrchliku>Sabre2</model_vrchliku>
+                <velikost_vrchliku>170 ft.</velikost_vrchliku>
+                <nosnost_vrchliku>90 kg</nosnost_vrchliku>
+                <urceni_vrchliku>Sport</urceni_vrchliku>
+                <datum_vyroby_vrchliku>2015-02-02</datum_vyroby_vrchliku>
+                <stav_vrchliku>Nový</stav_vrchliku>
+                <cena_vrchliku>70000</cena_vrchliku>
+            </vrchlik>
+            <vrchlik idV="2v">
+                <vyrobce_vrchliku>Performance Design</vyrobce_vrchliku>
+                <model_vrchliku>Katana</model_vrchliku>
+                <velikost_vrchliku>135 ft.</velikost_vrchliku>
+                <nosnost_vrchliku>82 kg</nosnost_vrchliku>
+                <urceni_vrchliku>Sport</urceni_vrchliku>
+                <datum_vyroby_vrchliku>2014-05-20</datum_vyroby_vrchliku>
+                <stav_vrchliku>Nový</stav_vrchliku>
+                <cena_vrchliku>90000</cena_vrchliku>
+            </vrchlik>
+            <vrchlik idV="3v">
+                <vyrobce_vrchliku>ICARUS</vyrobce_vrchliku>
+                <model_vrchliku>Omni2</model_vrchliku>
+                <velikost_vrchliku>229 ft.</velikost_vrchliku>
+                <nosnost_vrchliku>110 kg</nosnost_vrchliku>
+                <urceni_vrchliku>Student</urceni_vrchliku>
+                <datum_vyroby_vrchliku>2015-12-23</datum_vyroby_vrchliku>
+                <stav_vrchliku>200 seskoků</stav_vrchliku>
+                <cena_vrchliku>50000</cena_vrchliku>
+            </vrchlik>
+            <vrchlik idV="4v">
+                <vyrobce_vrchliku>SIGMA</vyrobce_vrchliku>
+                <model_vrchliku>SIGMA Tandem</model_vrchliku>
+                <velikost_vrchliku>395 ft.</velikost_vrchliku>
+                <nosnost_vrchliku>350 kg</nosnost_vrchliku>
+                <urceni_vrchliku>Tandem</urceni_vrchliku>
+                <datum_vyroby_vrchliku>2016-09-05</datum_vyroby_vrchliku>
+                <stav_vrchliku>Nový</stav_vrchliku>
+                <cena_vrchliku>130000</cena_vrchliku>
+            </vrchlik>
+            <vrchlik idV="5v">
+                <vyrobce_vrchliku>Performance Design</vyrobce_vrchliku>
+                <model_vrchliku>PD Optimum Reserve Chute</model_vrchliku>
+                <velikost_vrchliku>193 ft.</velikost_vrchliku>
+                <nosnost_vrchliku>90 kg</nosnost_vrchliku>
+                <urceni_vrchliku>Záložný padák</urceni_vrchliku>
+                <datum_vyroby_vrchliku>2016-07-03</datum_vyroby_vrchliku>
+                <stav_vrchliku>Nový</stav_vrchliku>
+                <cena_vrchliku>45000</cena_vrchliku>
+            </vrchlik>
+        </vrchliky>
+        <postroje>
+            <postroj idP="1p">
+                <vyrobce_postroje>Sunpath</vyrobce_postroje>
+                <model_postroje>JAVELIN AURORA</model_postroje>
+                <urceni_postroje>WINGSUIT</urceni_postroje>
+                <uvolnovace_postroje>Speciální uvolňovače určené pro wingsuit</uvolnovace_postroje>
+                <datum_vyroby_postroje>2016-05-05</datum_vyroby_postroje>
+                <cena_postroje>60 000 CZK</cena_postroje>
+            </postroj>
+            <postroj idP="2p">
+                <vyrobce_postroje>Sunpath</vyrobce_postroje>
+                <model_postroje>JAVELIN ODYSEA</model_postroje>
+                <urceni_postroje>Swooping</urceni_postroje>
+                <uvolnovace_postroje>Klasické uvolnovace</uvolnovace_postroje>
+                <datum_vyroby_postroje>2015-01-23</datum_vyroby_postroje>
+                <cena_postroje>55 000 CZK</cena_postroje>
+            </postroj>
+            <postroj idP="3p">
+                <vyrobce_postroje>UPT Vector</vyrobce_postroje>
+                <model_postroje>STUDENT VECTOR</model_postroje>
+                <urceni_postroje>Student</urceni_postroje>
+                <uvolnovace_postroje>Moznost uvolnovače na zádržku nebo padáčik</uvolnovace_postroje>
+                <datum_vyroby_postroje>2015-06-08</datum_vyroby_postroje>
+                <cena_postroje>35 000 CZK</cena_postroje>
+            </postroj>
+            <postroj idP="4p">
+                <vyrobce_postroje>SIGMA</vyrobce_postroje>
+                <model_postroje>SIGMA PASSENGER HARNESS</model_postroje>
+                <urceni_postroje>Tandem</urceni_postroje>
+                <uvolnovace_postroje>Uvolňovače určené pro tandem</uvolnovace_postroje>
+                <datum_vyroby_postroje>2015-04-20</datum_vyroby_postroje>
+                <cena_postroje>70 000 CZK</cena_postroje>
+            </postroj>
+            <postroj idP="5p">
+                <vyrobce_postroje>Velocity sports</vyrobce_postroje>
+                <model_postroje>INFINITY</model_postroje>
+                <urceni_postroje>BASE</urceni_postroje>
+                <uvolnovace_postroje>Uvolnovace určené pro BASE jumping</uvolnovace_postroje>
+                <datum_vyroby_postroje>2017-06-04</datum_vyroby_postroje>
+                <cena_postroje>35 000 CZK</cena_postroje>
+            </postroj>
+        </postroje>
+        <bezpecnostni_pristroje>
+            <bezpecnostni_pristroj idAAD="1aad">
+                <vyrobce_aad>CYPRES 2</vyrobce_aad>
+                <model_aad>No. I1503</model_aad>
+                <datum_vyroby_aad>2015-06-05</datum_vyroby_aad>
+                <cena_aad>30 000 CZK</cena_aad>
+                <specialni_parametre level="expert">
+                    <aktivace_vyska>225m</aktivace_vyska>
+                    <aktivace_rychlost>35 m/s</aktivace_rychlost>
+                </specialni_parametre>
+                <specialni_parametre level="student">
+                    <aktivace_vyska>300m</aktivace_vyska>
+                    <aktivace_rychlost>13 m/s</aktivace_rychlost>
+                </specialni_parametre>
+                <specialni_parametre level="tandem">
+                    <aktivace_vyska>580m</aktivace_vyska>
+                    <aktivace_rychlost>35 m/s</aktivace_rychlost>
+                </specialni_parametre>
+                <specialni_parametre level="speed">
+                    <aktivace_vyska>225m</aktivace_vyska>
+                    <aktivace_rychlost>45 m/s</aktivace_rychlost>
+                </specialni_parametre>
+            </bezpecnostni_pristroj>
+            <bezpecnostni_pristroj idAAD="2aad">
+                <vyrobce_aad>VIGIL 2</vyrobce_aad>
+                <model_aad>No. I1506</model_aad>
+                <datum_vyroby_aad>2016-12-20</datum_vyroby_aad>
+                <cena_aad>28 000 CZK</cena_aad>
+                <specialni_parametre level="expert">
+                    <aktivace_vyska>225m</aktivace_vyska>
+                    <aktivace_rychlost>35 m/s</aktivace_rychlost>
+                </specialni_parametre>
+                <specialni_parametre level="student">
+                    <aktivace_vyska>300m</aktivace_vyska>
+                    <aktivace_rychlost>13 m/s</aktivace_rychlost>
+                </specialni_parametre>
+                <specialni_parametre level="tandem">
+                    <aktivace_vyska>580m</aktivace_vyska>
+                    <aktivace_rychlost>35 m/s</aktivace_rychlost>
+                </specialni_parametre>
+            </bezpecnostni_pristroj>
+        </bezpecnostni_pristroje>
+    </zbozi>
+    <zamestnanci>
+        <zamestnanec idZAM="cen89890" pozice="prodavac" datum_vytvoreni="2014-01-10" datum_zmeny="2017-03-21">
+            <jmeno_zam>Juraj</jmeno_zam>
+            <prijimeni_zam>Kiska</prijimeni_zam>
+        </zamestnanec>
+        <zamestnanec idZAM="cen23476" pozice="uklizecka" datum_vytvoreni="2014-12-12" datum_zmeny="2015-03-19">
+            <jmeno_zam>Anna</jmeno_zam>
+            <prijimeni_zam>Glasova</prijimeni_zam>
+        </zamestnanec>
+        <zamestnanec idZAM="cen78930" pozice="manazer prodejny" datum_vytvoreni="2012-01-06" datum_zmeny="2016-12-01">
+            <jmeno_zam>Roman</jmeno_zam>
+            <prijimeni_zam>Kalina</prijimeni_zam>
+        </zamestnanec>
+    </zamestnanci>
+    <zakaznici>
+        <zakaznik idZAK="90875" datum_vytvoreni="2017-04-13" datum_zmeny="2017-04-15">
+            <jmeno_zak>Petr</jmeno_zak>
+            <prijimeni_zak>Haluska</prijimeni_zak>
+            <rok_narozeni_zak>1989</rok_narozeni_zak>
+            <adresa_zak>
+                <ulice_zak cpZAK="10">Kamycka</ulice_zak>
+                <mesto_zak>Praha</mesto_zak>
+                <psc_zak>189 00</psc_zak>
+            </adresa_zak>
+        </zakaznik>
+        <zakaznik idZAK="43256" datum_vytvoreni="2016-10-23" datum_zmeny="2017-01-25">
+            <jmeno_zak>Matej</jmeno_zak>
+            <prijimeni_zak>Rob</prijimeni_zak>
+            <rok_narozeni_zak>1973</rok_narozeni_zak>
+            <adresa_zak>
+                <ulice_zak cpZAK="93">Dobivatelu</ulice_zak>
+                <mesto_zak>Kolin</mesto_zak>
+                <psc_zak>139 00</psc_zak>
+            </adresa_zak>
+        </zakaznik>
+        <zakaznik idZAK="50875" datum_vytvoreni="2015-04-13" datum_zmeny="2017-01-01">
+            <jmeno_zak>Linda</jmeno_zak>
+            <prijimeni_zak>Novakova</prijimeni_zak>
+            <rok_narozeni_zak>1988</rok_narozeni_zak>
+            <adresa_zak>
+                <ulice_zak cpZAK="43">Stefanikova</ulice_zak>
+                <mesto_zak>Praha</mesto_zak>
+                <psc_zak>168 00</psc_zak>
+            </adresa_zak>
+        </zakaznik>
+    </zakaznici>
+</para_shop>
